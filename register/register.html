@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/iconfont/iconfont.css">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head w">
+        <ul class="head_right">
+            <li><a href="">帮助中心</a></li>
+            <li><a>简体中文</a></li>
+        </ul>
+        <div class="sce_menu">
+            <div data-lan="简体中文">简体中文</div>
+            <div data-lan="繁体中文">繁体中文</div>
+            <div data-lan="English">English</div>
+        </div>
+    </div>
+    <div class="register_box w">
+        <div class="register_body_box">
+            <div class="register_body">
+                <div class="register_body_title"><span>注册账号</span></div>
+                <div class="register_form_sec_box">
+                    <form action="">
+                        <div class="number_box">
+                            <div>
+                                <span>+86</span>
+                                <div class="img_box"></div>
+                            </div>
+                            <div>
+                                <input type="text" name="number" class="number need_text_a" placeholder="请输入手机号" data-reg="^1[3456789]\d{9}$" data-msg="请输入正确的手机号">
+                            </div>
+                        </div>
+                        <span class="check_item number_check"></span>
+                        <div class="code_box">
+                            <div class="code">
+                                <input type="text" class="code_input" name="code" placeholder="请输入验证码">
+                            </div>
+                            <button type="button" class="code_btn">获取验证码</button>
+                        </div>
+                        <div class="password_box">
+                            <input type="password" placeholder="请设置密码" class="need_text_a" data-reg="^[a-zA-Z0-9]{8,16}$" data-msg="密码为8-16位数字和字母">
+                            <div class="passwordsvg">
+                                <i class="none_code"></i>
+                            </div>
+                        </div>
+                        <span class="check_item password_check"></span>
+                        <button type="button" class="register_btn need_text_btn">注册</button>
+                        <div class="checkbox_box clearfix">
+                            <i class="checkbox iconfont icon-check"></i>
+                            已阅读并同意 <a href="">&laquo;账号使用协议&raquo;</a> & <a href="">&laquo;隐私政策&raquo;</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2005 - 2023 广东欢太  版权所有
+            <a href="">粤ICP备14056724号</a>
+            <span>联系方式：4001-999-666</span>
+        </p>
+    </div>
+    <script src="./register.js"></script>
+</body>
+</html>

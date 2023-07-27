@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../public/iconfont/iconfont.css">
+        <link rel="stylesheet" href="../public/public.css">
+        <link rel="stylesheet" href="list.css">
+		<meta charset="utf-8">
+		<title>商品详情</title>
+	</head>
+<body>
+    <div class="box">
+        <!-- 顶部菜单 -->
+        <div class="top nav">
+            <div class="top_main w">
+                <!-- 顶部菜单左侧 -->
+                <div class="top_left_box">
+                    <ul>
+                        <li><a href="">OPPO官网</a></li>
+                        <li><a href="">一加官网</a></li>
+                    </ul>
+                </div>
+                <div class="top_address"></div>
+                <!-- 顶部菜单右侧 -->
+                <div class="top_right_box clearfix">
+                    <ul>
+                        <li>
+                            <a href="../cart/cart.html">
+                                <i class="iconfont icon-shopping_cart"></i>
+                                <span>购物车（0）</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../register/register.html">
+                                <span>注册</span>
+                            </a>
+                        </li>
+                        <li class="top_log">
+                            <a href="../login/login.html">
+                                <i class="iconfont icon-log_in"></i>
+                                <span>登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>下载 OPPO 商城 App</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 第二个顶部菜单 -->
+        <div class="top2 nav clearfix">
+            <div class="top2_main w">
+                <!-- 第二个顶部菜单左侧 -->
+                <div class="top2_left">
+                    <div class="top2_left_img">
+                        <a href="../home/home.html">
+                            <img src="./imgs/logo.png" alt="">
+                        </a>	
+                    </div>
+                </div>
+                <!-- 第二个顶部菜单中间 -->
+                <div class="top2_center">
+                    <ul>
+                        <li><a href="">OPPO专区</a></li>
+                        <li><a href="">OnePlus专区</a></li>
+                        <li><a href="">智能硬件</a></li>
+                        <li><a href="">服务</a></li>
+                    </ul>
+                </div>
+                <!-- 第二个顶部菜单右侧 -->
+                <div class="top2_right">
+                    <div class="search_box">
+                    <form action="" name="search">
+                            <div class="search">
+                                <input type="search" placeholder="查找OPPO商品" name="searchText">
+                            </div>
+                            <button class="iconfont icon-search"></button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- 标题 -->
+        <div class="title_box w">
+            <div class="title">
+                <h1>OPPO专区</h1>
+            </div>
+        </div>
+        <!-- 选择列表 -->
+        <div class="select_box w">
+            <div class="select_main">
+                <span class="overall sort-item active" data-key="num">综合</span>
+                <span class="sales sort-item" data-key="sales">销量</span>
+                <span class="price" data-key="price">价格
+                    <i class="iconfont icon-up"></i>
+                    <i class="iconfont icon-down"></i>
+                </span>
+                <div class="price_search_box">
+                    <form action="" name="price_search">
+                        <div class="price_search clearfix">
+                            <div>￥<input type="text" placeholder="最低价格" name="min_price"></div>
+                            <div class="none">-</div>
+                            <div>￥<input type="text" placeholder="最高价格" name="max_price"></div>
+                            <button class="iconfont icon-search"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 商品列表 -->
+        <div class="shop_list_box w clearfix">
+            <ul class="clearfix list"></ul>
+        </div>
+        <iframe src="../public/footer/footer.html" frameborder="0" class="footer"></iframe>
+    </div>
+    <script src="./list.js"></script>
+</body>
+</html>

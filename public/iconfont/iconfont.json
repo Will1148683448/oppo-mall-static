@@ -1,0 +1,142 @@
+{
+  "id": "3970339",
+  "name": "OPPO",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8655885",
+      "name": "显示密码",
+      "font_class": "xianshimima",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "8655887",
+      "name": "隐藏密码2",
+      "font_class": "yincangmima",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "15958565",
+      "name": "送货",
+      "font_class": "car",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "2044300",
+      "name": "操作-返回顶部",
+      "font_class": "top",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "1496252",
+      "name": "安卓",
+      "font_class": "Smart",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "577354",
+      "name": "扫码",
+      "font_class": "saoma",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "1403427",
+      "name": "oppo",
+      "font_class": "oppo",
+      "unicode": "e82d",
+      "unicode_decimal": 59437
+    },
+    {
+      "icon_id": "1403432",
+      "name": "一加",
+      "font_class": "oneplus",
+      "unicode": "e830",
+      "unicode_decimal": 59440
+    },
+    {
+      "icon_id": "2674476",
+      "name": "客服",
+      "font_class": "customer",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "right",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "left",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "7556165",
+      "name": "加号",
+      "font_class": "add",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7556166",
+      "name": "减号",
+      "font_class": "minus",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "13474475",
+      "name": "对勾",
+      "font_class": "check",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "5387923",
+      "name": "箭头_向上_o",
+      "font_class": "up",
+      "unicode": "eb90",
+      "unicode_decimal": 60304
+    },
+    {
+      "icon_id": "5387924",
+      "name": "箭头_向下_o",
+      "font_class": "down",
+      "unicode": "eb91",
+      "unicode_decimal": 60305
+    },
+    {
+      "icon_id": "201222",
+      "name": "3.1购物车",
+      "font_class": "shopping_cart",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "629357",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "2578488",
+      "name": "登录",
+      "font_class": "log_in",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}

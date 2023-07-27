@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/public.css">
+    <link rel="stylesheet" href="orderConfirm.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <!-- 顶部菜单 -->
+        <div class="top nav">
+            <div class="top_main w">
+                <!-- 顶部菜单左侧 -->
+                <div class="top_left_box">
+                    <ul>
+                        <li><a href="">OPPO官网</a></li>
+                        <li><a href="">一加官网</a></li>
+                    </ul>
+                </div>
+                <div class="top_address"></div>
+                <!-- 顶部菜单右侧 -->
+                <div class="top_right_box clearfix">
+                    <ul>
+                        <li>
+                            <a href="../cart/cart.html">
+                                <i class="iconfont icon-shopping_cart"></i>
+                                <span>购物车（0）</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../register/register.html">
+                                <span>注册</span>
+                            </a>
+                        </li>
+                        <li class="top_log">
+                            <a href="../login/login.html">
+                                <i class="iconfont icon-log_in"></i>
+                                <span>登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>下载 OPPO 商城 App</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 第二个顶部菜单 -->
+        <div class="top2 nav clearfix">
+            <div class="top2_main w">
+                <!-- 第二个顶部菜单左侧 -->
+                <div class="top2_left">
+                    <div class="top2_left_img">
+                        <a href="../home/home.html">
+                            <img src="../public/img/logo.png" alt="">
+                        </a>	
+                    </div>
+                </div>
+                <!-- 第二个顶部菜单中间 -->
+                <div class="top2_center">
+                    <ul>
+                        <li><a href="">OPPO专区</a></li>
+                        <li><a href="">OnePlus专区</a></li>
+                        <li><a href="">智能硬件</a></li>
+                        <li><a href="">服务</a></li>
+                    </ul>
+                </div>
+                <!-- 第二个顶部菜单右侧 -->
+                <div class="top2_right">
+                    <div class="search_box">
+                        <form action="" name="search">
+                            <div class="search">
+                                <input type="search" placeholder="查找OPPO商品" name="searchText">
+                            </div>
+                            <button class="iconfont icon-search"></button>
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主要内容部分 -->
+        <!-- 收货地址部分 -->
+        <div class="shipping_address_box w">
+            <div class="address_head_box">
+                <span>收货地址</span>
+            </div>
+            <div class="address_body_box">
+                <div class="address_body">
+                    <ul class="address_box clearfix"></ul>
+                    <div class="dialog">
+                        <form action="" name="add">
+                            <input type="hidden" name="id" value="0">
+                            <input type="text" name="name" class="need_text text" data-reg="^[\u4E00-\u9FA5]{2,5}$" data-msg="请输入收货人姓名">
+                            <span class="check_name"></span>
+                            <input type="text" name="number" class="need_text text" data-reg="^1[3456789]\d{9}$" data-msg="请输入正确手机号">
+                            <span class="check_number"></span>
+                            <br>
+                            <select class="region-province" name="address"></select>
+                            <select class="region-city city" name="address"></select>
+                            <select class="region-area" name="address"></select>
+                            <select class="region-street street" name="address"></select>
+                            <div>(不包含中国港澳台地区)</div>
+                            <textarea name="detailed_address"cols="30" rows="5" class="need_text" data-reg="\S+" data-msg="请输入详细地址"></textarea>
+                            <span class="check_message"></span>
+                            <br>
+                            <i class="iconfont icon-check default" id="default"></i>
+                            <label for="default">设为默认地址</label>
+                            <br>
+                            <button class="cancle" type="button">取消</button>
+                            <button class="save" type="button">保存</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="address_footer_box">
+                <div class="address_footer">
+                    <div class="address_footer_top"><span>送货方式</span></div>
+                    <div class="address_footer_bottom">
+                        <i class="iconfont icon-car car"></i>
+                        <span>快递配送</span>
+                        <i class="iconfont icon-check checkbox"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品清单部分 -->
+        <div class="shop_list_box w">
+            <!-- 商品清单头部 -->
+            <div class="shop_list_head_box">
+                <span>商品清单</span>
+            </div>
+            <!-- 商品清单主体 -->
+            <div class="shop_list_body_box">
+                <div class="shop_list_body clearfix">
+                    <ul>
+                        <li>
+                            <div class="shop_content clearfix">
+                                <div class="img_box"><img src="" alt=""></div>
+                                    <div class="shop_name_box">
+                                        <h5>${item.name}</h5>
+                                        <span>7天价保</span>
+                                    </div>
+                                    <div class="shop_price_box"><span>￥${item.price}</span></div>
+                                    <div class="shop_sale_box"><span>x1</span></div>
+                                    <div class="sum_price"><span>￥199.00</span></div>
+                                </div>
+                            <ul class="gift_list">
+                                <li>
+                                    <div class="gift_box">
+                                        <span>赠品</span>
+                                        <img src="./imgs/gift0101.webp" alt="">
+                                        <span>【赠品】wowidea 耳机收纳包</span>
+                                        <span>x1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gift_box">
+                                        <span>赠品</span>
+                                        <img src="./imgs/gift0101.webp" alt="">
+                                        <span>【赠品】wowidea 耳机收纳包</span>
+                                        <span>x1</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 商品小计 -->
+        <div class="Subtotal_box w">
+            <div class="Subtotal">
+                <ul>
+                    <li><span>商品总额</span><span>￥4598</span></li>
+                    <li><span>限时补贴</span><span>-￥50</span></li>
+                    <li><span>运费（实付满￥69包邮）</span><span>￥0</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row_box w">
+            <div class="row">
+                <div class="row_head">
+                    <span>应付金额</span>
+                    <span>￥</span>
+                    <span>4488</span>
+                </div>
+                <div class="row_body"><span>天津市 市辖区 西青区 中北镇 花园里小区 收货人:张三 19811713368</span></div>
+                <div class="row_footer"><span><a href="../pay/pay.html">提交订单</a></span></div>
+                
+            </div>
+        </div>
+        <iframe src="../public/footer/footer.html" frameborder="0" class="footer"></iframe>
+    </div>
+    <script src="./plugins/address/regions.js"></script>
+	<script src="./plugins/address/regions_picker.js"></script>
+    <script src="./orderConfirm.js"></script>
+</body>
+</html>

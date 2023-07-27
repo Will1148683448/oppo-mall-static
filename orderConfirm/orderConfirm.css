@@ -1,0 +1,435 @@
+.box {
+    padding: 140px 8px 0 8px;
+}
+/* 地址部分样式 */
+.shipping_address_box {
+    background-color: white; 
+}
+/* 地址盒子头部 */
+.address_head_box {
+    padding-left: 32px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid rgba(51,51,51,.1);
+}
+.address_body{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+}
+/* 地址盒子样式 */
+ul.address_box {
+	width: 100%;
+    margin-bottom: 10px;
+}
+ul.address_box>li {
+	width: 50%;
+	height: 104px;
+	box-sizing: border-box;
+	padding: 8px;
+	float: left;
+}
+ul.address_box>li>div {
+	border: 1px solid #d5d5d5;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 16px 20px 16px 20px;
+    border-radius: 10px;
+}
+ul.address_box>li>div.select {
+    border: 1px solid red;
+}
+/* 地址内容样式 */
+.address {
+	width: 100%;
+	height: 100%;
+}
+/* 地址内容上半部分样式 */
+.address_top {
+	height: 28px;
+	line-height: 28px;
+}
+.address_top>span {
+	vertical-align: middle;
+}
+.address_top>span.address_default {
+	border-radius: 2px;
+	color: #268af0;
+	background-color: #c7e8ff;
+	padding: 2px 6px;
+	font-size: 10px;
+	margin-right: 8px;
+	display: none;
+}
+.address_top>span.address_default.active {
+	display: inline;
+}
+.address_top>span.names {
+	  margin-right: 8px;
+}
+.address_top>span.number {
+	  margin-right: 8px;
+}
+.address_top>button {
+	font-size: 10px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	float: right;
+	margin-top: 7px;
+}
+.address_top>button.update {
+	margin-right: 20px;
+	float: right;
+}
+/* 地址内容下半部分样式 */
+.address_bottom>span {
+	font-size: 10px;
+	margin-right: 8px;
+}
+/* 新增按钮样式 */
+li.new_address_box {
+	height: 88px;
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 8px;
+}
+li.new_address_box>button {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: 1px solid #d5d5d5;
+	color: #f05151;
+	font-size: 16px;
+	cursor: pointer;
+}
+/* 新增表单盒子样式 */
+.dialog {
+	width: 50%;
+	padding: 0 8px;
+	box-sizing: border-box;
+	display: none;
+}
+.show {
+	display: block;
+}
+/* 文本框样式 */
+.dialog>form>input.text {
+	width: 100%;
+	box-sizing: border-box;
+	height: 40px;
+	outline: none;
+	font-size: 16px;
+    padding-left: 10px;
+}
+/* 提示样式 */
+.dialog>form>span {
+	font-size: 12px;
+	margin-left: 10px;
+	color: #ff5252;
+	position: relative;
+	top: -4px;
+	display: inline-block;
+	height: 12px;
+}
+/* 关联选择器样式 */
+.dialog>form>select {
+	height: 40px;
+	width: 284.5px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+.dialog>form>select.city {
+	margin-right: 0;
+}
+.dialog>form>select.street {
+	margin-right: 0;
+}
+.dialog>form>div {
+	font-size: 13px;
+	color: #333;
+	opacity: .5;
+	transform: translateY(-10px);
+}
+/* 详细地址样式 */
+.dialog>form>textarea {
+	width: 100%;
+	height: 200px;
+	resize: vertical;
+	font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+/* 选择框样式 */
+.dialog>form>i.default {
+	border: 1px solid #837575;
+	border-radius: 50%;
+    color: transparent;
+	cursor: pointer;
+}
+.dialog>form>i.default.checked {
+    background-color: rgb(243, 65, 65);
+    color: white;
+    border-color: rgb(243, 65, 65);
+}
+.dialog>form>label {
+	color: rgba(0,0,0,.6);
+	cursor: pointer;
+	width: 100%;
+}
+/* 取消和确认按钮样式 */
+.dialog>form>button.cancle {
+	background-color: white;
+	border: 1px solid black;
+	cursor: pointer;
+	width: 148px;
+	height: 48px;
+	border-radius: 32px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.dialog>form>button.save {
+	background-color: rgb(243, 65, 65);
+	border:none;
+	cursor: pointer;
+	width: 148px;
+	height: 48px;
+	border-radius: 32px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: white;
+}
+/* 地址盒子底部部分 */
+.address_footer_top {
+    height: 64px;
+    padding-left: 32px;
+    line-height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid rgba(51,51,51,.1);
+}
+.address_footer_bottom {
+    padding: 0 32px 32px 32px;
+    margin-top: 28px;
+}
+.address_footer_bottom>i.car {
+    font-size: 22px;
+    vertical-align: middle;
+}
+.address_footer_bottom>span {
+    margin-left: 12px;
+}
+.address_footer_bottom>i.checkbox {
+    background-color: rgb(243, 65, 65);
+    color: white;
+    border-color: rgb(243, 65, 65);
+    border-radius: 50%;
+    margin-left: 24px;
+}
+/* 商品订单部分样式 */
+.shop_list_box {
+    background-color: white; 
+    margin-top: 12px;
+}
+/* 商品订单头部 */
+.shop_list_head_box {
+    padding-left: 32px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid rgba(51,51,51,.1);
+}
+/* 商品订单主体部分样式 */
+.shop_list_body_box {
+    padding: 0 33px 19px 33px;
+    margin-top: 24px;
+}
+.shop_list_body>ul>li {
+    margin-bottom: 60px;
+}
+/* 商品内容样式 */
+.shop_content>.img_box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 24px;
+}
+.shop_content>.img_box>img {
+    height: 100%;
+}
+/* 商品名字 */
+.shop_content>.shop_name_box {
+    width: 537px;
+    float: left;
+}
+.shop_content>.shop_name_box>h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #343a40;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+.shop_content>.shop_name_box>span {
+    border: 0.8px solid red;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 8px;
+    border-radius: 5px;
+    color: red;
+}
+/* 商品单价 */
+.shop_content>.shop_price_box {
+    float: left;
+    padding-left: 26px;
+    height: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    line-height: 18px;
+    display: inline-block;
+    width: 70px;
+}
+.shop_content>.shop_sale_box {
+    float: left;
+    width: 164px;
+    text-align: right;
+}
+/* 总价样式 */
+.sum_price {
+    float: right;
+    height: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f34141;
+    line-height: 18px;
+}
+/* 赠品样式 */
+ul.gift_list {
+    margin-left: 120px;
+    padding-top: 30px;
+    width: 800px;
+}
+ul.gift_list>li {
+    padding: 12px 0;
+    border-top: 1px solid rgba(51,51,51,.1);
+}
+.gift_box>span:nth-child(1) {
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: #fe722e;
+    background-color: rgba(255,144,0,.1);
+    white-space: nowrap;
+    margin-right: 13px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.gift_box>img{
+    height: 48px;
+    vertical-align: middle;
+}
+.gift_box>span:nth-child(3) {
+    font-size: 14px;
+color: rgba(0,0,0,.87);
+}
+.gift_box>span:nth-child(4) {
+    float: right;
+    vertical-align: middle;
+    line-height: 48px;
+}
+/* 商品小计 */
+.Subtotal_box {
+    background-color: white;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 20px 32px 20px 0;
+    box-sizing: border-box;
+}
+.Subtotal {
+text-align: right;
+}
+.Subtotal>ul>li>span:nth-child(1) {
+    text-align: left;
+    display: inline-block;
+    width: 200px;
+    color: #4a4a4a;
+    opacity: .9;
+    font-size: 14px;
+}
+.Subtotal>ul>li>span:nth-child(2) {
+    display: inline-block;
+    width: 180px;
+    font-size: 14px;
+    color: #343a40;
+}
+/* 提交订单部分 */
+.row_box {
+    background-color: white;
+    padding: 20px 32px;
+    box-sizing: border-box;
+}
+.row {
+    text-align: right;
+}
+.row_head>span:nth-child(1) {
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 22px;
+    margin-right: 12px;
+}
+.row_head>span:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f34141;
+}
+.row_head>span:nth-child(3) {
+    font-size: 28px;
+    line-height: 28px;
+    height: 28px;   
+    font-weight: 500;
+    color: #f34141
+}
+.row_body {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 20px;
+    opacity: .5;
+}
+.row_footer {
+    height: 48px;
+    width: 155px;
+    background: #f34141;
+    border-radius: 29px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.row_footer>span>a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}

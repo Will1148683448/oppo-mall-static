@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../public/public.css">
+    <link rel="stylesheet" href="./order.css">
+    <title>我的订单</title>
+</head>
+<body>
+    <div class="box">
+        <!-- 顶部菜单 -->
+        <div class="top nav">
+            <div class="top_main w">
+                <!-- 顶部菜单左侧 -->
+                <div class="top_left_box">
+                    <ul>
+                        <li><a href="">OPPO官网</a></li>
+                        <li><a href="">一加官网</a></li>
+                    </ul>
+                </div>
+                <div class="top_address"></div>
+                <!-- 顶部菜单右侧 -->
+                <div class="top_right_box clearfix">
+                    <ul>
+                        <li>
+                            <a href="../cart/cart.html">
+                                <i class="iconfont icon-shopping_cart"></i>
+                                <span>购物车（0）</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../register/register.html">
+                                <span>注册</span>
+                            </a>
+                        </li>
+                        <li class="top_log">
+                            <a href="../login/login.html">
+                                <i class="iconfont icon-log_in"></i>
+                                <span>登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>下载 OPPO 商城 App</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 第二个顶部菜单 -->
+        <div class="top2 nav clearfix">
+            <div class="top2_main w">
+                <!-- 第二个顶部菜单左侧 -->
+                <div class="top2_left">
+                    <div class="top2_left_img">
+                        <a href="../home/home.html">
+                            <img src="../public/img/logo.png" alt="">
+                        </a>	
+                    </div>
+                </div>
+                <!-- 第二个顶部菜单中间 -->
+                <div class="top2_center">
+                    <ul>
+                        <li><a href="">OPPO专区</a></li>
+                        <li><a href="">OnePlus专区</a></li>
+                        <li><a href="">智能硬件</a></li>
+                        <li><a href="">服务</a></li>
+                    </ul>
+                </div>
+                <!-- 第二个顶部菜单右侧 -->
+                <div class="top2_right">
+                    <div class="search_box">
+                        <form action="" name="search">
+                            <div class="search">
+                                <input type="search" placeholder="查找OPPO商品" name="searchText">
+                            </div>
+                            <button class="iconfont icon-search"></button>
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主要内容部分 -->
+        <div class="main_box w clearfix">
+            <!-- 主要内容左侧菜单栏部分 -->
+            <div class="main_left_box">
+                <div class="main_left">
+                    <div class="main_left_top">
+                        <div class="main_left_top_img">
+                            <img src="../public/img/user_head.jpg" alt="">
+                        </div>
+                        <h5>Will47</h5>
+                        <span>账户：188****5658</span>
+                        <button class="check_in" type="button">
+                            <img src="../public/img/a7e7de2.png" alt="">
+                            <span>签到</span>
+                        </button>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">我的订单</a></li>
+                        <li><a href="">我的评价</a></li>
+                        <li><a href="">我的积分</a></li>
+                        <li><a href="">我的优惠券</a></li>
+                        <li><a href="">我的购物卡</a></li>
+                        <li><a href="">回收单</a></li>
+                        <li><a href="">回收代金券</a></li>
+                        <li><a href="">领券中心</a></li>
+                        <li><a href="../address/address.html">收货地址</a></li>
+                        <li><a href="">发票抬头</a></li>
+                        <li><a href="">积分抵现</a></li>
+                        <li><a href="../profile/profile.html">账户管理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 主要内容右侧我的订单部分 -->
+           <div class="main_right_box">
+                <div class="main_right">
+                    <!-- 右侧头部 -->
+                    <div class="main_right_head">
+                        <ul>
+                            <li>
+                                <span>全部</span>
+                            </li>
+                            <li>
+                                <span>待付款</span>
+                            </li>
+                            <li>
+                                <span>待发货</span>
+                            </li>
+                            <li>
+                                <span>已发货</span>
+                            </li>
+                            <li>
+                                <span>待评价</span>
+                            </li>
+                            <li>
+                                <span>退换/售后</span>
+                            </li>
+                        </ul>
+                        <div class="indicator"></div>
+                    </div>
+                    <!-- 订单主体 -->
+                    <div class="order_box">
+                        <div class="order">
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <iframe src="../public/footer/footer.html" frameborder="0" class="footer"></iframe>
+    </div>
+    <script src="./order.js"></script>
+</body>
+</html>

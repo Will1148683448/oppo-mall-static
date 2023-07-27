@@ -1,0 +1,189 @@
+body {
+    background-color: #F7F7FA;
+}
+.box {
+    padding-top: 140px;
+}
+/* 订单信息 */
+.order_box {
+    background-color: white;
+}
+/* 订单信息头部 */
+.order_head {
+    padding: 30px 30px 20px 32px;
+    height: 130px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 0.8px solid rgba(0,0,0,.12);
+}
+.order_head>.img_box {
+    width: 80px;
+    height: 80px;
+    background-image: url(./imgs/399ab4b.webp);
+    background-size: 100%;
+    float: left;
+}
+/* 订单提示 */
+.order_head>.order_tips {
+    display: inline-block; 
+    position: absolute;
+    left: 112px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.order_head>.order_tips>div:first-child {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #363636;
+}
+.order_head>.order_tips>div:first-child>span {
+    color: #f34141;;
+}
+.order_head>.order_tips>div:last-child {
+    font-size: 14px;
+    color: #333;
+    opacity: .5;
+}
+/* 订单信息主体 */
+.order_body {
+    padding: 30px 0px 20px 32px;
+    box-sizing: border-box;
+}
+.order_body>p {
+    height: 22px;
+    font-size: 16px;
+    color: #343a40;
+    line-height: 22px;
+}
+.order_body>ul {
+    border: 0.8px solid transparent;
+}
+.order_body>ul>li {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 22px;
+}
+.pay_box {
+    background-color: white;
+    margin-top: 20px;
+}
+.pay_head {
+    padding-left: 32px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid rgba(51,51,51,.1);
+}
+.pay_body>ul>li {
+    width: 25%;
+    float: left;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.pay_contant {
+    width: 288px;
+    height: 74px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    opacity: .96;
+    cursor: pointer;
+    text-align: center;
+}
+.pay_body>ul>li.active>.pay_contant {
+    border-color: #f45858;
+}
+.pay_contant::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+}
+.pay_contant>div {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    vertical-align: middle;
+}
+.pay_contant>span {
+    color: #343a40;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+/* 花呗分期样式 */
+ul.huabeifenqi {
+    display: none;
+}
+ul.huabeifenqi.checked {
+    display: block;
+}
+ul.huabeifenqi>li>div {
+    padding-top: 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+ul.huabeifenqi>li>div>span:first-child {
+    vertical-align: middle;
+    display: block;
+}
+ul.huabeifenqi>li>div>span:nth-child(2) {
+    vertical-align: middle;
+    height: 22px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}
+ul.huabeifenqi>li>div>i.mianxi {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    text-align: center;
+    border-radius: 0 4px 0 8px;
+    width: 36px;
+    height: 22px;
+    background: #ffe9e9;
+    font-size: 12px;
+    color: #f34141;
+    line-height: 22px;
+}
+ul.huabeifenqi>li.active>div>i.mianxi {
+    background-color: #f34141;
+    color: white;
+}
+.pay_footer {
+    background-color: white;
+    text-align: center;
+}
+.pay_footer>div {
+    display: none;
+}
+.pay_footer>div.show {
+    display: block;
+}
+.pay_footer>div>div.img_box {
+    width: 118px;
+    height: 118px;
+    display: inline-block;
+    background-image: url(./imgs/pay.png);
+    background-size: 100%;
+
+}
+.pay_footer>div>div.text {
+    display: inline-block;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 24px;
+}
+
+
+
+
